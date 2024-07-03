@@ -10,24 +10,28 @@
 
 const nota = parseInt(prompt("Ingrese una nota: "));
 
-if (nota < 0) {
+if (/[a-zA-Z]/.test(nota)) {
   document.write("La nota ingresada no es valida");
-}
-if (nota >= 0 && nota <= 2) {
-  document.write("Muy deficiente");
-}
-if (nota === 3 || nota === 4) {
-  document.write("Insuficiente");
-}
-if (nota === 5 || nota === 6) {
-  document.write("Suficiente");
-}
-if (nota === 7) {
-  document.write("Bien");
-}
-if (nota === 8 || nota === 9) {
-  document.write("Notable");
-}
-if (nota === 10) {
-  document.write("Sobresaliente");
+} else {
+  if (nota < 0) {
+    document.write("La nota ingresada no es valida");
+  }
+  if (nota >= 0 && nota <= 2) {
+    document.write("Muy deficiente");
+  }
+  if (nota === 3 || nota === 4) {
+    document.write("Insuficiente");
+  }
+  if (nota === 5 || nota === 6) {
+    document.write("Suficiente");
+  }
+  if (nota === 7) {
+    document.write("Bien");
+  }
+  if (nota === 8 || nota === 9) {
+    document.write("Notable");
+  }
+  if (nota === 10) {
+    document.write("Sobresaliente");
+  }
 }
