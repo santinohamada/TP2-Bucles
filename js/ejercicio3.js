@@ -8,6 +8,6 @@ do{
     cadena[i] = prompt("Ingrese una cadena de texto");
     i++;
 }
-while (confirm("ingrese un texto") == true)
+while (confirm("Desea continuar ingresando texto?") == true)
 
 document.write(cadena.join('-'));
