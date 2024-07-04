@@ -11,7 +11,7 @@
 
 const numero = parseInt(prompt('Digite un numero, entre 1 y 50 incluidos'));
 if(numero >=1 && numero <=50){
-    for(let i =numero; i>=0;i--){
+    for(let i =numero; i>=1;i--){
         for(let k =1; k<=i;k++){
             document.write(i);
         }
